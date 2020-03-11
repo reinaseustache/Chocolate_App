@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UAEActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/brown_white_gradient">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="18dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="25dp">
+
+            <RelativeLayout
+                android:id="@+id/outer_relLay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF">
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:src="@drawable/uae_choco"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/img1"
+                    android:text="\nAl Nassma – Camel Milk Chocolate"
+                    android:textSize="28sp"
+                    android:textColor="#33A1FF"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="cursive"
+                    android:id="@+id/text1"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/text1"
+                    android:text="@string/uae_text1"
+                    android:id="@+id/text2"/>
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:src="@drawable/plane"
+                    android:scaleType="centerCrop"
+                    android:layout_below="@id/text2"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/img2"
+                    android:text="\nTake off and embark this savory adventure!"
+                    android:textSize="28sp"
+                    android:textColor="#33A1FF"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="cursive"
+                    android:id="@+id/text3"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/text3"
+                    android:text="@string/uae_text2"
+                    android:id="@+id/text4"/>
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:src="@drawable/melt"
+                    android:scaleType="centerCrop"
+                    android:layout_below="@id/text4"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/img3"
+                    android:text="\n4 Things to try in the UAE on World Chocolate Day"
+                    android:textSize="28sp"
+                    android:textColor="#33A1FF"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="cursive"
+                    android:id="@+id/text5"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/text5"
+                    android:text="@string/uae_text3"
+                    android:id="@+id/text6"/>
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+</android.support.constraint.ConstraintLayout>

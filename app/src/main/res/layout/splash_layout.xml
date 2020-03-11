@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/brown_white_gradient">
+
+    <ImageView
+        android:id="@+id/splash_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/chocolate"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/middle_east_str"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IN THE MIDDLE EAST"
+        android:layout_below="@id/splash_screen"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:textSize="35dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/brown_white_gradient">
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view1"
+            android:layout_gravity="center"
+            android:layout_width="185dp"
+            android:layout_height="274dp"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardBackgroundColor="#FFFFFF"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"
+            android:onClick="onClick">
+
+            <TextView
+                android:id="@+id/info_text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Background on Chocolate"
+                android:fontFamily="cursive"
+                android:textStyle="bold"
+                android:textColor="#654321"
+                android:textSize="20sp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/hist_of_coco" />
+
+            <TextView
+                android:id="@+id/info_text1.1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The brown delicacy that is chocolate is an ancient treat that has been enjoyed worldwide for centuries. Learn more...-->"
+                android:textStyle="bold"
+                android:textColor="#33A1FF"
+                android:textSize="11sp"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:gravity="bottom"
+                android:layout_marginTop="190dp"/>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view2"
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardBackgroundColor="#FFFFFF"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/card_view1"
+            android:layout_alignLeft="@id/card_view1"
+            android:layout_alignStart="@id/card_view1"
+            android:layout_alignEnd="@id/card_view1"
+            android:layout_alignRight="@id/card_view1"
+            android:onClick="onClick">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/saudi_choco"/>
+
+            <TextView
+                android:id="@+id/info_text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chocolate in Saudi Arabia"
+                android:fontFamily="cursive"
+                android:textStyle="bold"
+                android:textColor="#654321"
+                android:textSize="20sp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"/>
+
+            <TextView
+                android:id="@+id/info_text2.1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chocolate consumption in Saudi Arabia is sky rocketing. Learn more...-->"
+                android:textStyle="bold"
+                android:textColor="#33A1FF"
+                android:textSize="10sp"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:gravity="bottom"
+                android:layout_marginTop="160dp"/>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view3"
+            android:layout_gravity="center"
+            android:layout_width="185dp"
+            android:layout_height="200dp"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardBackgroundColor="#FFFFFF"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/card_view1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:onClick="onClick">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/uae_choco"/>
+
+            <TextView
+                android:id="@+id/info_text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chocolate in United Arab Emirates"
+                android:fontFamily="cursive"
+                android:textStyle="bold"
+                android:textColor="#654321"
+                android:textSize="15sp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"/>
+
+            <TextView
+                android:id="@+id/info_text3.1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New ingredients are transforming the chocolate industry in UAE. Learn more...-->"
+                android:textStyle="bold"
+                android:textColor="#33A1FF"
+                android:textSize="9sp"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:gravity="bottom"
+                android:layout_marginTop="160dp"/>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view4"
+            android:layout_gravity="center"
+            android:layout_width="185dp"
+            android:layout_height="274dp"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardBackgroundColor="#FFFFFF"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/card_view3"
+            android:layout_alignLeft="@id/card_view3"
+            android:layout_alignStart="@id/card_view3"
+            android:layout_alignEnd="@id/card_view3"
+            android:layout_alignRight="@id/card_view3"
+            android:onClick="onClick">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/chart_choco"/>
+
+            <TextView
+                android:id="@+id/info_text4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Market Trends"
+                android:fontFamily="cursive"
+                android:textStyle="bold"
+                android:textColor="#654321"
+                android:textSize="30sp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"/>
+
+            <TextView
+                android:id="@+id/info_text4.1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The Middle East chocolate market has grown tremendously over the past few years. Learn more...-->"
+                android:textStyle="bold"
+                android:textColor="#33A1FF"
+                android:textSize="12sp"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:gravity="bottom"
+                android:layout_marginTop="190dp"/>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+</android.support.constraint.ConstraintLayout>
